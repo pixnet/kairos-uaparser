@@ -1,0 +1,27 @@
+{
+    "name":         "kairos/uaparser",
+    "description":  "User Agent parser in php",
+    "keywords":     ["ua", "user-agent", "php"],
+    "homepage":     "github.com/kairosagency",
+    "type":         "library",
+    "license":      "MIT",
+
+    "authors": [
+        {
+            "name":      "Alexandre Assouad",
+            "email":     "Assouad@kairosagency.com",
+            "homepage":  "http://kairosagency.com"
+        }
+    ],
+
+    "require": {
+        "php":                   ">=5.3.1",
+        "symfony/yaml":  "2.1.*"
+    },
+    
+    "autoload": {
+        "psr-0": {
+            "Kairos\\UA": "src/"
+        }
+    }
+}
