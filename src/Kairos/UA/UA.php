@@ -19,7 +19,9 @@
 
 namespace Kairos\UA;
 
-use Symfony\Component\Yaml;
+use \Exception;
+use \stdClass;
+use Symfony\Component\Yaml\Yaml;
 
 
 class UA {
