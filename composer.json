@@ -2,7 +2,7 @@
     "name":         "kairos/uaparser",
     "description":  "User Agent parser in php",
     "keywords":     ["ua", "user-agent", "php"],
-    "homepage":     "github.com/kairosagency",
+    "homepage":     "http://github.com/kairosagency",
     "type":         "library",
     "license":      "MIT",
 
