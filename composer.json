@@ -9,9 +9,11 @@
     "authors": [
         {
             "name":      "Steven Verbeek",
+            "role":      "composer"
         },
         {
             "name":      "Tobie",
+            "role":      "original developer"
         }
     ],
 
