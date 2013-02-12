@@ -1,27 +1,27 @@
 {
-    "name":         "kairos/uaparser",
-    "description":  "User Agent parser in php",
+    "name":         "dubcanada/uaparser",
+    "description":  "User Agent parser in php from https://github.com/tobie/ua-parser modified to use JSON",
     "keywords":     ["ua", "user-agent", "php"],
-    "homepage":     "http://github.com/kairosagency",
+    "homepage":     "http://github.com/dubcanada",
     "type":         "library",
     "license":      "MIT",
 
     "authors": [
         {
-            "name":      "Alexandre Assouad",
-            "email":     "Assouad@kairosagency.com",
-            "homepage":  "http://kairosagency.com"
+            "name":      "Steven Verbeek",
+        },
+        {
+            "name":      "Tobie",
         }
     ],
 
     "require": {
-        "php":                   ">=5.3.1",
-        "symfony/yaml":  "2.1.*"
+        "php":                   ">=5.3.1"
     },
-    
+
     "autoload": {
         "psr-0": {
-            "Kairos\\UA": "src/"
+            "dubcanada\\UA": "src/"
         }
     }
 }
