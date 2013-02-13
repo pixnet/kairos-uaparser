@@ -22,8 +22,6 @@
     },
 
     "autoload": {
-        "psr-0": {
-            "dubcanada\\UA": "src/"
-        }
+        "files": ["src/UA.php"]
     }
 }
