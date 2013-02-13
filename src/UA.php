@@ -30,8 +30,6 @@
 
 // REWROTE TO USE JSON INSTEAD OF YAML IT'S FASTER
 
-namespace dubcanada\UA;
-
 use \Exception;
 use \stdClass;
 
