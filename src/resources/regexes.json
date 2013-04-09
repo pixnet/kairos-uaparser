@@ -97,6 +97,10 @@
       "regex": "(Opera)/9.80.*Version/(\\d+)\\.(\\d+)(?:\\.(\\d+))?"
     },
     {
+      "regex": "(?:Mobile Safari).*(OPR)/(\\d+)\\.(\\d+)\\.(\\d+)",
+      "family_replacement": "Opera Mobile"
+    },
+    {
       "regex": "(hpw|web)OS/(\\d+)\\.(\\d+)(?:\\.(\\d+))?",
       "family_replacement": "webOS Browser"
     },
