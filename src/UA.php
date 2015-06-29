@@ -30,6 +30,8 @@
 
 // REWROTE TO USE JSON INSTEAD OF YAML IT'S FASTER
 
+namespace PIXNET\UAparser;
+
 use \Exception;
 use \stdClass;
 

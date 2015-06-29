@@ -22,6 +22,8 @@
     },
 
     "autoload": {
-        "files": ["src/UA.php"]
+        "psr-4": {
+            "PIXNET\\UAparser\\": "src/"
+        }
     }
 }
