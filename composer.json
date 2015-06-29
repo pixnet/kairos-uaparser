@@ -1,26 +1,19 @@
 {
-    "name":         "dubcanada/uaparser",
-    "description":  "User Agent parser in php from https://github.com/tobie/ua-parser modified to use JSON",
-    "keywords":     ["ua", "user-agent", "php"],
-    "homepage":     "http://github.com/dubcanada",
-    "type":         "library",
-    "license":      "MIT",
-
+    "name": "pixnet/uaparser",
+    "description": "User Agent parser in PHP from https://github.com/dubcanada/kairos-uaparser",
+    "keywords": ["ua", "user-agent", "php"],
+    "homepage": "https://github.com/pixnet/kairos-uaparser",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name":      "Steven Verbeek",
-            "role":      "composer"
-        },
-        {
-            "name":      "Tobie",
-            "role":      "original developer"
+            "name": "Tech",
+            "email": "pixnetapi@pixnet.tw"
         }
     ],
-
     "require": {
-        "php":                   ">=5.3.1"
+        "php": ">=5.3.1"
     },
-
     "autoload": {
         "psr-4": {
             "PIXNET\\UAparser\\": "src/"
