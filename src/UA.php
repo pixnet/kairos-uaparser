@@ -74,6 +74,7 @@ class UA {
         $result->ua           = $this->uaParse($ua);
         $result->os           = $this->osParse($ua);
         $result->device       = $this->deviceParse($ua);
+        $result->app          = $this->appParse($ua);
 
         // create a full string version based on the ua and os objects
         $result->toFullString = $this->toFullString($result->ua, $result->os);
@@ -222,6 +223,44 @@ class UA {
 
         return $device;
 
+    }
+
+    /**
+     * appParse
+     *
+     * @param string $ua_string
+     * @access public
+     * @return object
+     */
+    public function appParse($ua_string = '') {
+        $app = (object) array(
+            'family' => '',
+            'major' => null,
+            'minor' => null,
+            'patch' => null,
+            'toString' => '',
+            'toVersionString' => ''
+        );
+
+        foreach ($this->regexes->app_parsers as $regex) {
+            if (preg_match('@' . $regex->regex . '@i', $ua_string, $matches)) {
+                if (!isset($matches[1])) $matches[1] = '';
+                if (!isset($matches[2])) $matches[2] = null;
+                if (!isset($matches[3])) $matches[3] = null;
+                if (!isset($matches[4])) $matches[4] = null;
+
+                $app->family = isset($regex->app_replacement) ? $regex->app_replacement : $matches[1];
+                $app->major = isset($regex->app_v1_replacement) ? $regex->app_v1_replacement : $matches[2];
+                $app->minor = isset($regex->app_v2_replacement) ? $regex->app_v2_replacement : $matches[3];
+                $app->patch = isset($regex->app_v3_replacement) ? $regex->app_v3_replacement : $matches[4];
+                $app->toString = $this->toString($app);
+                $app->toVersionString = $this->toVersionString($app);
+
+                return $app;
+            }
+        }
+
+        return $app;
     }
 
     /**
