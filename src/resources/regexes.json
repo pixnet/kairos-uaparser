@@ -1162,5 +1162,31 @@
             "regex": "(bot|borg|google(^tv)|yahoo|slurp|msnbot|msrbot|openbot|archiver|netresearch|lycos|scooter|altavista|teoma|gigabot|baiduspider|blitzbot|oegp|charlotte|furlbot|http%20client|polybot|htdig|ichiro|mogimogi|larbin|pompos|scrubby|searchsight|seekbot|semanticdiscovery|silk|snappy|speedy|spider|voila|vortex|voyager|zao|zeal|fast\\-webcrawler|converacrawler|dataparksearch|findlinks)",
             "device_replacement": "Spider"
         }
+    ],
+    "app_parsers": [
+        {
+            "regex": "(Line)/(\\d+)\\.(\\d+)\\.?(\\d+)?",
+            "app_replacement": "LINE"
+        },
+        {
+            "regex": "(FBAN/FBIOS);FBAV/(\\d+)\\.(\\d+)\\.?(\\d+)?",
+            "app_replacement": "Facebook"
+        },
+        {
+            "regex": "(FB_IAB|FBAN)/FB4A;FBAV/(\\d+)\\.(\\d+)\\.?(\\d+)?",
+            "app_replacement": "Facebook"
+        },
+        {
+            "regex": "(FB_IAB|FBAN)/FB4A;FBAV/(\\d+)\\.(\\d+)\\.?(\\d+)?",
+            "app_replacement": "Facebook"
+        },
+        {
+            "regex": "(FBAN/MessengerForiOS);FBAV/(\\d+)\\.(\\d+)\\.?(\\d+)?",
+            "app_replacement": "Facebook Messager"
+        },
+        {
+            "regex": "(FBAN/GroupsForiOS);FBAV/(\\d+)\\.(\\d+)\\.?(\\d+)?",
+            "app_replacement": "Facebook Groups"
+        }
     ]
 }
