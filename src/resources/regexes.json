@@ -1198,7 +1198,7 @@
         },
         {
             "regex": "(MicroMessenger)\\/(\\d+)\\.(\\d+)\\.?(\\d+)?",
-            "app_replacement": "Wechat"
+            "app_replacement": "WeChat"
         },
         {
             "regex": "(QQ)\\/(\\d+)\\.(\\d+)\\.?(\\d+)?",
